@@ -1,0 +1,38 @@
+.battle-img {
+    background-image: url(https://www.serebii.net/swordshield/battlebg/standard.jpg);
+    background-size: cover;
+}
+
+.glass-card {
+    background-color: #ff00007a;
+    border: 2px solid red;
+    border-radius: .5em;
+}
+
+.glass-scorecard {
+    background-color: rgba(255, 255, 255, 0.173);
+    border: 2px solid red;
+    border-radius: .5em;
+}
+
+/* UTILS */
+.footer-icon:hover {
+    color: aqua;
+}
+
+.text-shadow {
+    text-shadow: 3px 3px black;
+}
+
+.score-text {
+    font-size: 5em;
+}
+
+.score-numbers {
+    font-size: 17em;
+}
+
+.button-text {
+    font-size: 2em;
+    background-color: #ff00007a;
+}

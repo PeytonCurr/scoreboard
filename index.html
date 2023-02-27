@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>BattleBoard 💥</title>
+</head>
+
+<body class="debug battle-img">
+    <header class="container-fluid">
+
+        <!-- SECTION Reset button -->
+        <!-- #region -->
+        <section class="row justify-content-center">
+            <div class="col-10 text-end p-3">
+                <button class="btn button-text text-light text-shadow" onclick="reset()">Reset</button>
+            </div>
+        </section>
+        <!-- #endregion -->
+
+    </header>
+
+    <main class="container-fluid">
+
+        <!-- SECTION Scoreboard -->
+        <!-- #region -->
+        <section class="row justify-content-center">
+            <div class="col-9 glass-card">
+                <section class="row justify-content-evenly p-4">
+                    <div class="col-5 text-center p-2">
+                        <h1 class="text-light text-shadow score-text">HOME</h1>
+                    </div>
+                    <div class="col-5 text-center p-2">
+                        <h1 class="text-light text-shadow score-text">AWAY</h1>
+                    </div>
+                </section>
+                <section class="row justify-content-evenly p-4">
+                    <div class="col-4 text-center glass-scorecard">
+                        <h1 id="home-count" class="text-light text-shadow score-numbers">00</h1>
+                    </div>
+                    <div class="col-4 text-center glass-scorecard">
+                        <h1 id="away-count" class="text-light text-shadow score-numbers">00</h1>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- SECTION Point Buttons -->
+        <!-- #region -->
+        <section class="row justify-content-evenly p-5">
+            <div class="col-5 text-center p-3">
+                <button class="btn button-text text-light text-shadow" onclick="increaseHome()">HOME + 1</button>
+            </div>
+            <div class="col-5 text-center p-3">
+                <button class="btn button-text text-light text-shadow" onclick="increaseAway()">AWAY + 1</button>
+            </div>
+            <div class="col-5 text-center p-3">
+                <button class="btn button-text text-light text-shadow"
+                    onclick="increaseHome(), increaseHome(), increaseHome()">HOME + 3</button>
+            </div>
+            <div class="col-5 text-center p-3">
+                <button class="btn button-text text-light text-shadow"
+                    onclick="increaseAway(), increaseAway(), increaseAway()">AWAY + 3</button>
+            </div>
+        </section>
+        <!-- #endregion -->
+
+    </main>
+
+    <!-- SECTION Footer -->
+    <!-- #region -->
+    <footer class="container-fluid text-dark bg-danger sticky-bottom">
+        <section class="row justify-content-between">
+            <div class="col-3 d-flex justify-content-center">
+                <i class="mdi mdi-youtube d-flex align-items-center p-1 footer-icon"></i>
+                <i class="mdi mdi-instagram d-flex align-items-center p-1 footer-icon"></i>
+                <i class="mdi mdi-facebook d-flex align-items-center p-1 footer-icon"></i>
+                <i class="mdi mdi-twitter d-flex align-items-center p-1 footer-icon"></i>
+            </div>
+            <div class="col-md-3 col-6 d-flex justify-content-center align-items-center">
+                <b>Made with child Pokemon Labor 💔</b>
+            </div>
+        </section>
+    </footer>
+    <!-- #endregion -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
